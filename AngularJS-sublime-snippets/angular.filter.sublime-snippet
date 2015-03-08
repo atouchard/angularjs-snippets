@@ -1,0 +1,33 @@
+<snippet>
+    <content><![CDATA[
+(function() {
+
+  'use strict';
+
+  /**
+   * @ngdoc filter
+   * @name ${1:module}.filters:${2:Filter}
+   * @module ${1:module}
+   * @kind function
+   *
+   * @description
+   * Filter description
+   *
+   * @ngInject
+   */
+  function ${2:Filter}() {
+    return function(value) {
+    };
+  }
+
+  angular
+    .module('${1:module}')
+    .filter('${2:Filter}', ${2:Filter});
+
+})();
+
+]]></content>
+    <tabTrigger>ngfilter</tabTrigger>
+    <scope>source.js</scope>
+    <description>Angular.js</description>
+</snippet>

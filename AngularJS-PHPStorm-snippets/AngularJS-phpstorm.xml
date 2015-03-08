@@ -1,0 +1,41 @@
+<templateSet group="AngularJS">
+  <template name="ng-m" value="(function() {&#10;&#10;  'use strict';&#10;&#10;  /**&#10;   * @ngdoc overview&#10;   * @name $moduleName$&#10;   *&#10;   * @requires $dependency$&#10;   *&#10;   * @description&#10;   * Module description&#10;   */&#10;   angular.module('$moduleName$', [&#10;     '$dependency$'&#10;   ]);&#10;&#10;  $moduleName$.$inject = ['$dependency$'];&#10;})();" description="Define a new Angular Module" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng-fa" value="(function() {&#10;&#10;  'use strict';&#10;&#10;  /**&#10;   * @ngdoc service&#10;   * @name $moduleName$.$factoryName$Service&#10;   * @module $moduleName$&#10;   * @kind function&#10;   *&#10;   * @requires $dependency$&#10;   *&#10;   * @description&#10;   * Service description&#10;   *&#10;   * @ngInject&#10;   */&#10;  function $factoryName$Service($dependency$) {&#10;    &#10;    function $func$() { &#10;    }&#10;    $END$&#10;&#10;    return {&#10;      $func$: $func$&#10;    };&#10;  }&#10;&#10;  angular&#10;    .module('$moduleName$')&#10;    .factory('$factoryName$Service', $factoryName$Service);&#10;&#10;  $factoryName$Service.$inject = ['$dependency$'];&#10;&#10;})();" description="Define a new Angular Factory" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="factoryName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="func" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng-c" value="(function() {&#10;&#10;  'use strict';&#10;&#10;  /**&#10;   * @ngdoc controller&#10;   * @name $moduleName$.controllers:$controllerName$Controller&#10;   * @module $moduleName$&#10;   *&#10;   * @requires $dependency$&#10;   *&#10;   * @description&#10;   * Controller description&#10;   *&#10;   * @ngInject&#10;   */&#10;  function $controllerName$Controller($dependency$) {&#10;    /* jshint validthis: true */&#10;    var vm = this;&#10;    $END$&#10;  }&#10;&#10;  angular&#10;    .module('$moduleName$')&#10;    .controller('$controllerName$Controller', $controllerName$Controller);&#10;&#10;  $controllerName$Controller.$inject = ['$dependency$'];&#10;&#10;})();" shortcut="SPACE" description="Define a new Angular Controller" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="controllerName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng-fi" value="(function() {&#10;&#10;  'use strict';&#10;&#10;  /**&#10;   * @ngdoc filter&#10;   * @name $moduleName$.filters:$filterName$&#10;   * @module $moduleName$&#10;   * @kind function&#10;   *&#10;   * @description&#10;   * Filter description&#10;   *&#10;   * @ngInject&#10;   */&#10;  function $filterName$() {&#10;    return function(value) {&#10;    };&#10;  }&#10;&#10;  angular&#10;    .module('$moduleName$')&#10;    .filter('$filterName$', $filterName$);&#10;&#10;})();" description="Define a new Angular filter" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="filterName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ng-d" value="(function() {&#10;&#10;  'use strict';&#10;&#10;  /**&#10;   * @ngdoc directive&#10;   * @name $moduleName$.directive:$directiveName$&#10;   * @module $moduleName$&#10;   *&#10;   * @requires $dependency$&#10;   *&#10;   * @restrict EA&#10;   * @scope&#10;   * @function&#10;&#10;   * @description&#10;   * Directive description&#10;   *&#10;   * @ngInject&#10;   */&#10;  function $directiveName$($dependency$) {&#10;&#10;    function link(scope, element, attrs) {&#10;    }&#10;&#10;    return {&#10;      restrict: 'EA',&#10;      scope: {},&#10;      template: '',&#10;      link: link&#10;    };&#10;  }&#10;&#10;  angular&#10;    .module('$moduleName$')&#10;    .directive('$directiveName$', $directiveName$);&#10;&#10;  $directiveName$.$inject = ['$dependency$'];&#10;  &#10;})();" description="Define a new Angular Directive" toReformat="false" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="directiveName" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="dependency" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>

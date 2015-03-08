@@ -1,0 +1,48 @@
+<snippet>
+    <content><![CDATA[
+(function() {
+
+  'use strict';
+
+  /**
+   * @ngdoc directive
+   * @name ${1:module}.directive:${2:directive}
+   * @module ${1:module}
+   *
+   * @requires ${3:dependencies}
+   *
+   * @restrict ${4:A}
+   * @scope
+   * @function
+   *
+   * @description
+   * Directive description
+   *
+   * @ngInject
+   */
+  function ${2:directive}(${3:dependencies}) {
+
+    function link(scope, element, attrs) {
+    }
+
+    return {
+      restrict: '${4:A}',
+      scope: {},
+      template: '',
+      link: link
+    };
+  }
+
+  ${2:directive}.$inject = [${3:dependencies}];
+
+  angular
+    .module('${1:module}')
+    .directive('${2:directive}', ${2:directive});
+
+})();
+
+]]></content>
+    <tabTrigger>ngdirective</tabTrigger>
+    <scope>source.js</scope>
+    <description>Angular.js</description>
+</snippet>
